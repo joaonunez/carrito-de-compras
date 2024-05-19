@@ -1,0 +1,62 @@
+.fila-descripcion{
+    
+    text-align: center;
+}
+.fila-titulo{
+    text-align: center;
+}
+
+.descripcion{
+    
+}
+
+.descripcion p{
+    margin: auto;
+    text-align: center;
+    margin: 0;
+    
+}
+
+@media(max-width: 768px){
+    .descripcion p{
+        margin: auto;
+        text-align: center;
+        margin: auto;
+    }
+    .mi-table {
+        margin: auto;
+        display: block;
+        overflow-x: auto; /* Habilita el desplazamiento horizontal */
+        -webkit-overflow-scrolling: touch; /* Para desplazamiento suave en dispositivos táctiles */
+        max-width: 350px;
+    }
+    
+    .mi-table::-webkit-scrollbar {
+        height: 15px; /* Altura de la barra de desplazamiento horizontal */
+    }
+    
+    .mi-table::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Color del fondo de la barra de desplazamiento */
+    }
+    
+    .mi-table::-webkit-scrollbar-thumb {
+        background: #888; /* Color de la barra de desplazamiento */
+        border-radius: 4px; /* Radio de borde para que se vea más redondeada */
+    }
+    
+    .mi-table::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Color de la barra de desplazamiento cuando se pasa el ratón por encima */
+    }
+    
+    .contenedor-carrito{
+        margin: auto;
+        text-align: center;
+    }
+    .boton-seguir-comprando{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    
+    
+}

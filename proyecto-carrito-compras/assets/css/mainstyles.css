@@ -1,0 +1,22 @@
+@import url('styles/galeriaProductos.css');
+@import url('styles/carrito.css');
+
+
+
+
+body {
+    width: 100%; /* Ancho por defecto para pantallas grandes */
+    margin: 0 auto; /* Centra el contenido si la pantalla es más ancha que el body */
+    background: rgb(142, 212, 165);   
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+        background: rgb(142, 212, 165);   
+
+               
+    }
+}
