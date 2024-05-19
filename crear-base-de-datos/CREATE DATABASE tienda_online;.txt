@@ -1,0 +1,51 @@
+CREATE DATABASE tienda_online;
+
+---------------------------------
+
+USE tienda_online;
+
+---------------------------------
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion TEXT,
+    precio INT NOT NULL, -- INT porque en chile no hay decimas en la moneda
+    stock INT NOT NULL
+);
+
+---------------------------------
+
+
+INSERT INTO productos (nombre, descripcion, precio, stock) VALUES
+('Coca Cola', 'Botella de 2L', 1500, 5),
+('Fanta', 'Botella de 2L', 1400, 2),
+('Sprite', 'Botella de 2L', 1400, 2),
+('Gatorade', 'Botella de 1L', 1200, 10),
+('Pepsi', 'Botella de 2L', 1500, 4),
+('7up', 'Botella de 2L', 1400, 2),
+('Mountain Dew', 'Botella de 2L', 1600, 10),
+('Aquarius', 'Botella de 1.5L', 1300, 6),
+('Powerade', 'Botella de 1L', 1200, 10),
+('Lipton Ice Tea', 'Botella de 1.5L', 1500, 8);
+
+
+-----------------------------------
+
+SELECT * FROM productos; --verifica los datos
+
+
+-------------------------------------
+
+
+CREATE TABLE carrito (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    producto_id INT NOT NULL,
+    cantidad INT NOT NULL,
+    FOREIGN KEY (producto_id) REFERENCES productos(id)
+);
+
+
+
+
+
+
